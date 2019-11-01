@@ -102,17 +102,18 @@ then
     long_queue_time="3600"
 else
     isVoltron=1
-    export PATH=/gpfs0/biobuild/biobuilds-2016.11/bin:$PATH 
+    # export PATH=/gpfs0/biobuild/biobuilds-2016.11/bin:$PATH 
     unset MALLOC_ARENA_MAX
     load_gpu="CUDA_VISIBLE_DEVICES=0,1,2,3" 
     # Juicer directory, contains scripts/, references/, and restriction_sites/
     # can also be set in options via -D
-    juiceDir="/gpfs0/juicer/"
+    # juiceDir="/gpfs/data/abl/home/choh09/programs/juicer/"
+    juiceDir="/gpfs/data/abl/home/choh09/Work/201911_November/juicer-development/juicer/"
     # default queue, can also be set in options
-    queue="commons"
+    queue="cpu_medium"
     queue_time="2880"
     # default long queue, can also be set in options
-    long_queue="long"
+    long_queue="cpu_long"
     long_queue_time="7200"
 fi
 
@@ -133,7 +134,7 @@ groupname="a$(date +%s)"
 # top level directory, can also be set in options
 topDir=$(pwd)
 # restriction enzyme, can also be set in options
-site="MboI"
+site="Arima"
 # genome ID, default to human, can also be set in options
 genomeID="hg19"
 # normally both read ends are aligned with long read aligner; 

@@ -22,7 +22,7 @@ def process_args(args):
   # elements into this dictionary.
 
   filenames = {
-    'hg19': '/seq/references/Homo_sapiens_assembly19.fasta',
+    'hg19': '/gpfs/data/abl/home/choh09/programs/juicer/references/Homo_sapiens_assembly19.fasta',
     'mm9' : '/seq/references/Mus_musculus_assembly9.fasta',
     'mm10': '/seq/references/Mus_musculus_assembly10.fasta',
     'hg18': '/seq/references/Homo_sapiens_assembly18.fasta',
